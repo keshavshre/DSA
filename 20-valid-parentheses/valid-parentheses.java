@@ -5,7 +5,7 @@ class Solution {
             if(s.charAt(i)=='(' || s.charAt(i)=='{' || s.charAt(i)=='['){
                 st.push(s.charAt(i));
             }
-            else if(s.charAt(i)==')' || s.charAt(i)=='}' || s.charAt(i)==']'){
+            else {
                 if(st.isEmpty())return false;
                 char ch=st.pop();
                 if((s.charAt(i)==')' && ch!='(') ||
